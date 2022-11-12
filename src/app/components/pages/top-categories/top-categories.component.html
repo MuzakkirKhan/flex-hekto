@@ -1,0 +1,14 @@
+<div class="title">
+    <h1 class="title__feature">Top Categories</h1>
+  </div>
+<div class="rowTop__Main">
+
+<div class="rowTop" *ngFor="let data of datas">
+    <div class="rowTop__img-bg">
+<img class="rowTop__img-size" src={{data.img}} alt="">
+    </div>
+    <h4 class="rowTop__text-one">{{data.t1}}</h4>
+    <h4 class="rowTop__text-two">{{data.t2}}</h4>
+
+</div>
+</div>

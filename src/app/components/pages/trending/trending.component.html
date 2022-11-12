@@ -1,0 +1,55 @@
+    <div class="title">
+        <h1 class="title__feature">Trending Products</h1>
+      </div>
+
+    <div class="rowOne" > 
+        <div class="outerBox" *ngFor="let data of rowOne">
+
+            <div class="outerBox__imgBg" >
+
+                <div class="outerBox__img">
+                     <img class="outerBox__img-size" src={{data.img}} alt="">
+                </div>            
+            </div>
+            <div class="outerBox__text">
+                <div class="outerBox__text-1">
+                <h4>{{data.t1}}</h4>
+            </div>
+            <div class="outerBox__text-2">
+                <h4 class="outerBox__text-2-One ms">{{data.t2}}</h4>
+                <h4 class="outerBox__text-2-Two">{{data.t3}}</h4>
+            </div>
+           </div>
+        </div>
+     </div> 
+
+
+<div class="rowTwo">
+
+    <div class="twoCards" *ngFor="let data of rowTwo">
+         <div class="twoCards__text">
+            <h4 class="twoCards__text-one">{{data.t1}}</h4>
+            <h3 class="twoCards__text-two">{{data.t2}}</h3>
+         </div>
+         <div class="twoCards__img">
+         <img  class="twoCards__img-size" src={{data.img}} alt="">
+         </div>
+    </div>
+
+
+    <div class="threeCardsMain">
+    <div class="threeCards" *ngFor="let data of rowTwoo">
+        <div class="threeCards__image">
+            <img class="threeCards__image-im" src={{data.img}} alt="">
+
+        </div>
+        <div class="threeCards__text">
+            <h4 class="threeCards__text-one">{{data.t1}}</h4>
+            <h4 class="threeCards__text-two">{{data.t2}}</h4>
+
+        </div>
+    </div>
+</div>
+
+
+</div>

@@ -1,0 +1,48 @@
+.latest {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    &__products {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: var(--color-text-primary);
+        margin-left: 3rem;
+        justify-items: center;
+
+        @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: var(--color-text-primary);
+            margin-left: 3rem;
+            justify-items: center;
+           
+        }
+
+
+        @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1rem;
+            color: var(--color-text-primary);
+            margin-left: 3rem;
+            justify-items: center;
+           
+        }
+
+
+
+    }
+}
+
+.new {
+    color: var(--color-text-secondary)
+}

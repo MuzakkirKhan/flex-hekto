@@ -1,0 +1,90 @@
+
+
+:root {
+    --color-bg-1: #F2F0FF;
+    --color-bg-2: #F1F0FF;
+    --color-bg-footer: #EEEFFB;
+    --color-bg-footer2: #E7E4F8;
+    --color-bg-header1: #7E33E0;
+    --color-bg-card: #F6F7FB;
+    --color-text-primary:#151875;
+    --color-text-secondary:#FB2E86;
+    --color-icon: #F1F1F1;
+    --color-footerText: #8A8FB9;    
+    --color-footer2-text:#9DA0AE;
+    --color-footer2-icons: #FFFFFF;
+    --color-header-main:#0D0E43;
+    --color-header-input: #E7E6EF;
+    --color-latest-bg: #F7F7F7;
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+    // apart from just alliting variables to colors; variables are even set for lines and box shadow as well
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}
+
+//Break points are being found on the basis as when the text breaks
+$bp-Xlargest: 93.7em;     // 1200px  i.e  1200/16 = 75 em
+$bp-largest: 75em;     // 1200px  i.e  1200/16 = 75 em
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//Instead of mentioning box-sizing below, its being mentioned in html and than inheriting it
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+
+    @media only screen and (max-width: $bp-Xlargest) {  // making fontsize 8 rem at this point, this gives more room
+        font-size: 50%;
+    }
+}
+
+
+// below we are setting global fonts
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6rem;
+    // we get output even without it - but things get repeated
+   // min-width: min-content;
+   max-width:100%;
+   width:100%;
+
+    min-height: 100vh; // minimum is this, yet it gets increased based on the data
+    @media only screen and (max-width: $bp-large) {  // making fontsize 8 rem at this point, this gives more room
+        max-width: 100%;
+        width:100%; 
+    }
+
+}
+
+// @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+//     max-width: 100%;
+//     width:100%; 
+// }
+
+// @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+//     max-width: 100%;
+//     width:100%; 
+// }

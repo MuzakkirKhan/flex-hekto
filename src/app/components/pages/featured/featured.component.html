@@ -1,0 +1,53 @@
+<div class="title mtb">
+  <h1 class="title__feature">Featured Products</h1>
+</div>
+<div class="featured">
+  
+  <div *ngFor="let data of datas">
+    <div class="featured__card">  
+      <div class="featured__card-imageBox">
+        <img class="featured__card-imageBox-image" src={{data.image}} alt="">
+      </div>
+      <div class="featured__card-text ">
+        <h4 class="featured__card-text-textOne">{{data.t1}} </h4>
+        <h5 class="featured__card-text-textTwo">{{data.t2}}</h5>
+        <h5 class="featured__card-text-textThree">${{data.t3}}</h5>
+      </div> 
+    </div>
+  </div>
+
+    <!-- <div class="featured__card">
+      <div class="featured__card-imageBox">
+        <img class="featured__card-imageBox-image" src="../assets/images/card2.png" alt="">
+      </div>
+      <div class="featured__card-text ">
+        <h4 class="featured__card-text-textOne">Cantilever chair </h4>
+        <h5 class="featured__card-text-textTwo">Code - Y523201</h5>
+        <h5 class="featured__card-text-textThree">$42.00</h5>
+      </div>
+    </div>
+
+    <div class="featured__card">
+      <div class="featured__card-imageBox">
+        <img class="featured__card-imageBox-image" src="../assets/images/card3.png" alt="">
+      </div>
+      <div class="featured__card-text ">
+        <h4 class="featured__card-text-textOne">Cantilever chair </h4>
+        <h5 class="featured__card-text-textTwo">Code - Y523201</h5>
+        <h5 class="featured__card-text-textThree">$42.00</h5>
+      </div>
+    </div>
+
+    <div class="featured__card">
+      <div class="featured__card-imageBox">
+        <img class="featured__card-imageBox-image" src="../assets/images/card4.png" alt="">
+      </div>
+      <div class="featured__card-text ">
+        <h4 class="featured__card-text-textOne">Cantilever chair </h4>
+        <h5 class="featured__card-text-textTwo">Code - Y523201</h5>
+        <h5 class="featured__card-text-textThree">$42.00</h5>
+      </div>
+    </div> -->
+
+  </div>
+

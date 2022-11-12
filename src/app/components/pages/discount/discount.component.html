@@ -1,0 +1,58 @@
+<div class="title mtb">
+    <h1 class="title__feature">Discount Item</h1>
+  </div>
+
+<div class="latest">
+    <h4 class="latest__products new"> New Arrival</h4>
+    <h4 class="latest__products"> Best Seller</h4>
+    <h4 class="latest__products"> Featured</h4>
+    <h4 class="latest__products"> Special Offer</h4>
+</div>
+
+<div class="row">
+    <div class="colOne">
+        <h4 class="colOne__heading">20% Discount Of All Products</h4>
+        <h4 class="colOne__text">Eams Sofa Compact</h4>
+        <h4 class="colOne__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Eu eget feugiat habitasse nec, bibendum condimentum.</h4>
+
+     <div class="colOne-main">
+        <div class="colOne__subCol" *ngFor="let data of datas1">
+
+            <div  class="colOne__subCol-item">               
+                <svg class="colOne__subCol-item-icon">
+                    <use xlink:href="../assets/images/sprite3.svg#icon-check"></use>
+                  </svg>                
+            <div class="colOne__subCol-item-text">
+                {{data.text}}
+            </div>
+        </div>
+
+        </div>
+
+        <div class="colOne__subCol" *ngFor="let data of datas2">
+
+            <div  class="colOne__subCol-item">               
+                <svg class="colOne__subCol-item-icon">
+                    <use xlink:href="../assets/images/sprite3.svg#icon-check"></use>
+                  </svg>                
+            <div class="colOne__subCol-item-text">
+                {{data.text}}
+            </div>
+        </div>
+
+        
+
+        </div>
+        <button class="btn Dis-btn">Shop Now</button>
+
+     </div>
+        
+       
+       
+
+        
+    </div>
+    <div class="colTwo">
+        <img class="colTwo-size" src="../../../../assets/images/d1.png" alt="">
+    </div>
+</div>

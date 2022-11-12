@@ -1,0 +1,44 @@
+
+<div class="title mtb">
+  <h1 class="title__feature">Latest Products</h1>
+</div>
+
+<div class="latest">
+  <h4 class="latest__products new"> New Arrival</h4>
+  <h4 class="latest__products"> Best Seller</h4>
+  <h4 class="latest__products"> Featured</h4>
+  <h4 class="latest__products"> Special Offer</h4>
+</div>
+  <div class="mainLatest">
+
+  <div class="latestCards">
+
+    <div class="latestCards__mainDiv" *ngFor="let data of datas">
+   
+      <div class="latestCards__card">
+      <div class="latestCards__card-imageBox">
+        <img class="latestCards__card-imageBox-image" src={{data.image}} alt="">
+      </div>
+    </div>
+    
+      <div class="latestCards__card-text ">
+        <div>
+        <h4 class="latestCards__card-text-textOne">{{data.t1}} </h4>
+       </div>
+        <div class="latestCards__card-text-textTwoMain" >
+        <h5 class="latestCards__card-text-textTwoMain-one">{{data.t2}}</h5>
+        <h5 class="latestCards__card-text-textTwoMain-two">{{data.t2}}</h5> 
+      </div>     
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<div class="title shopex">
+  <h1 class="title__feature">What Shopex Offer!</h1>
+</div>
+
+
+  
+  

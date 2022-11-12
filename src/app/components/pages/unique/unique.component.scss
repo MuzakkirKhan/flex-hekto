@@ -1,0 +1,129 @@
+.rowMain{
+    margin-top: 13.5rem;
+    margin-bottom:13.2rem;
+  //  width: 192rem;
+    max-width: 100%;
+height: minmax(57.9rem, 150rem);
+background: #F1F0FF;
+
+
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.unique{
+    display: flex; 
+    overflow-x: hidden;
+    flex-wrap: wrap;
+
+    &__img{
+        background-image: url("/assets/images/unique-bg.png");
+        background-repeat: no-repeat;
+       // background-size: ;
+        background-position: center;
+
+        @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+            max-width: 100%;
+            width:100%; 
+            display: flex;
+           
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        &-size{
+            margin-left:10rem;
+          //  margin-top: 5rem;
+        }
+    }
+
+    &__text{
+        @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+            max-width: 100%;
+            width:100%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        width:64rem;
+        margin-top:9.7rem;
+&-main{
+    font-family: 'Josefin Sans';
+    font-size: 3.5rem;
+    line-height: 132%;
+  
+    letter-spacing: 0.015em;
+    
+    color: #151875;
+
+    @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+       
+    font-size: 2.5rem;
+    }
+}
+
+&-sub{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 1.6rem;
+line-height: 132%;
+/* or 21px */
+
+letter-spacing: 0.015em;
+padding-top:1rem;
+margin-top: 1rem;
+
+color: #ACABC3;
+
+@media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+       
+    font-size: 1.2rem;
+    }
+
+&-1,&-2,&-3{
+margin-top:1.3rem
+}
+
+}
+
+&-last{
+    
+}
+
+    }
+
+    &__btn{
+
+        &-text{
+            font-size: 17px;
+line-height: 20px;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+        }
+
+        display: flex;
+        margin-top: 4.4rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        letter-spacing: 0.02em;
+        
+        color: #FFFFFF;
+
+        &-last{
+            font-size: 1.4rem;
+line-height: 1.6rem;
+letter-spacing: 0.02em;
+color: #151875;
+margin-left: 1.9rem;
+        }
+    }
+}

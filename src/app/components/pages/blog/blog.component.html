@@ -1,0 +1,27 @@
+<div class="title m">
+    <h1 class="title__feature">Leatest Blog</h1>
+  </div>
+
+<div class="main">
+<div class="blog" *ngFor="let data of data">
+    <div class="blog__img">
+        <img class="blog__img-size" src={{data.img}} alt="">
+    </div>
+
+    <div class="blog__text-rowOne mr">
+        <div class="blog__text-rowOne-one">
+            <div>  <img class="blog__text-rowOne-size" src="../../../../assets/images/blog-icon1.png" alt=""></div>
+          <div> <h4>SaberAli</h4></div>
+           
+        </div>
+        <div class="blog__text-rowOne-two">
+            <img  class="blog__text-rowOne-size" src="../../../../assets/images/blog-icon-2.png" alt="">
+            <h4>21 August,2020</h4>
+        </div>
+    </div>
+
+    <h2 class="blog__text-rowTwo-1 mr">{{data.t1}}</h2>
+    <h2 class="blog__text-rowTwo-2 mr">{{data.t2}}</h2>
+    <h2 class="blog__text-rowTwo-3 mr">{{data.t3}}</h2>
+</div>
+</div>
