@@ -5,21 +5,21 @@
     flex-wrap: wrap;
     
 
-    @media only screen and (max-width: 1500px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width: 1500px) {  
         margin-top:5rem;
         margin-bottom:5rem;
        
      }
-    @media only screen and (max-width: 1400px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width: 1400px) {  
         margin-top:5rem;
         margin-bottom:5rem;
      }
-    @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width: 1100px) {  
            margin-top:5rem;
            margin-bottom:5rem;
         }
         
-        @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+        @media only screen and (max-width: 900px) {  
             margin-top:5rem;
             margin-bottom:5rem;
         }
@@ -29,7 +29,7 @@
 }
 
 .blog {
-    border:4px solid red;
+   
     display: flex;
     margin-left: 50rem;
     flex-direction: column;
@@ -44,7 +44,7 @@
 
 
 
-    @media only screen and (max-width:1500px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width:1500px) {  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,7 +59,7 @@
        
     }
 
-    @media only screen and (max-width:1500px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width:1500px) {  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -74,7 +74,7 @@
        
     }
 
-    @media only screen and (max-width:1400px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width:1400px) {  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -88,7 +88,7 @@
         margin-bottom:15rem;
        
     }
-    @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width: 1100px) {  
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -103,7 +103,7 @@
             
         }
         
-        @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+        @media only screen and (max-width: 900px) {  
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -115,6 +115,8 @@
             margin: 8rem 0 11.5rem 0;
             margin-right:20rem;
             margin-bottom:15rem;
+            margin-top: -8rem;
+            margin-left: 5rem;
         }
  
     
@@ -125,21 +127,21 @@
         height: 25.5rem;
         border-radius: 5rem;
         margin-top:-2rem;
-        @media only screen and (max-width:1500px) {  // making fontsize 8 rem at this point, this gives more room
+        @media only screen and (max-width:1500px) {  
             width: 27rem;
             height: 20.3rem;
             margin-top:-1rem;
             margin-left: -19rem;
     
         }
-        @media only screen and (max-width:1400px) {  // making fontsize 8 rem at this point, this gives more room
+        @media only screen and (max-width:1400px) {  
             width: 27rem;
             height: 20.3rem;
             margin-top:-1.5rem;
             margin-left: -19rem;
     
         }
-        @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+        @media only screen and (max-width: 1100px) {  
             width: 20rem;
             height: 17.3rem;
             margin-top:-6rem;
@@ -147,7 +149,7 @@
                 
             }
             
-            @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+            @media only screen and (max-width: 900px) {  
                 width: 15rem;
                 height: 15rem;
                 margin-top:-2rem;
@@ -159,48 +161,84 @@
     &__text-rowOne {
       
           display: flex;
-        margin-top: 1.9rem;
+         
+        margin-top: 1.9rem;   
+        margin-left: -30rem;   
 
         
 
-    @media only screen and (max-width:1500px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width:1500px) {  
         margin-top: 16rem;       
     }
-    @media only screen and (max-width:1400px) {  // making fontsize 8 rem at this point, this gives more room
+    @media only screen and (max-width:1400px) {  
         margin-top: 15rem;  
            
     }
-    @media only screen and (max-width:1100px) {  // making fontsize 8 rem at this point, this gives more room
-        margin-top: 22rem;  
+    @media only screen and (max-width:1100px) {  
+        margin-top: 22rem;
+     
            
     }
 
-    @media only screen and (max-width:900px) {  // making fontsize 8 rem at this point, this gives more room
-        margin-top: 18rem;       
+    @media only screen and (max-width:900px) {  
+        margin-top: 24rem; 
+        
+             
+    }
+    @media only screen and (max-width:600px) {  
+        margin-top: 24rem; 
+             
     }
        
 
         &-size{
             height:1.13rem;
             width:1.13rem;
-            margin-right:.5rem
+            margin-right:.5rem;
+          
+
+            &-one{
+                margin-left: -14rem;
+                @media only screen and (max-width:900px) {  
+                 margin-left:-20rem;      
+                 display: none; 
+                }
+              
+                @media only screen and (max-width:1100px) {  
+                 margin-left:-2rem      
+                }
+            }
+            &-two{
+                margin-left: -12rem; 
+                @media only screen and (max-width:900px) {  
+                 margin-left:-18rem;  
+                 display: none;  
+                
+                }
+
+                @media only screen and (max-width:1100px) {  
+                    margin-left:-0.5rem      
+                   }
+            }
 
         }
 
         &-one {
             display: flex;
-            flex-direction: row;
-            font-family: 'Josefin Sans';
-            font-size: 14px;
-            line-height: 16px;
+            flex-direction: row;            
+            font-size: 1.4rem;
+            line-height: 1.6rem;
             margin-right: 3rem;
             color: var(--color-text-primary);
-            @media only screen and (max-width: 1100px) {  // making fontsize 8 rem at this point, this gives more room
+            @media only screen and (max-width: 1100px) {  
                     max-width: 100%;
                     width:100%; 
+                    margin-top: -6rem;
+                    margin-left: -12rem;
+                    
                 }
                 
-                @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+                @media only screen and (max-width: 900px) {  
                     max-width: 100%;
                     width:100%; 
                 }
@@ -209,27 +247,32 @@
 
         &-two {
             display: flex;
-            font-family: 'Josefin Sans';
-            font-size: 14px;
-            line-height: 16px;
+          
+            font-size: 1.4rem;
+            line-height: 1.6rem;
             color: var(--color-text-primary);
-
+            @media only screen and (max-width: 900px) {  
+              margin-right: -9rem;
+            }
         }
     }
 
     &__text-rowTwo-1 {
      
         margin-top: 3.2rem;
-        font-family: 'Josefin Sans';
-        font-size: 18px;
-        line-height: 21px;
+       
+        font-size: 1.8rem;
+        line-height: 2.1rem;
         color: var(--color-text-primary);
+        @media only screen and (max-width: 900px) {  
+            margin-top: -3rem;
+          }
     }
 
 
     &__text-rowTwo-2 {
         margin-top: 1.7rem;
-        font-family: 'Lato';
+        font-family: var(--font-family-secondary);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -240,7 +283,7 @@
 
     &__text-rowTwo-3 {
         margin-top: 1.4rem;
-        font-family: 'Lato';
+        font-family: var(--font-family-secondary);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -258,4 +301,56 @@
 
 .m{
     margin-bottom: 8rem;
+}
+
+.blog__text-rowOne-two{
+    height:1.13rem;
+    width:1.13rem;
+ margin-left: 12rem;
+
+   
+        @media only screen and (max-width: 900px) {  
+            height:1.13rem;
+    width:1.13rem;
+ margin-left: 12rem;
+ display: none;
+         
+          }
+          @media only screen and (max-width: 1100px) {  
+            margin-top: -6rem;
+            height:1.13rem;
+            width:1.13rem;
+            margin-left: 21rem;
+        
+          }
+          @media only screen and (max-width: 600px) {  
+            height:1.1rem;
+            width:1.1rem;         
+
+         
+          }
+   
+&-im{
+    @media only screen and (max-width: 600px) {  
+     
+     
+      }
+}
+    &-tx{
+        @media only screen and (max-width: 900px) {  
+            margin-right: -90rem;
+            margin-left: 1rem;
+            display: none;
+        
+          }
+          @media only screen and (max-width: 1100px) {  
+            margin-right: -90rem;
+            margin-left: 1rem;
+            
+          }
+          @media only screen and (max-width: 900px) {  
+           
+          }
+    }
+
 }

@@ -51,7 +51,7 @@
         align-items: center;
 
         &-1 {
-            font-family: 'Lato';
+            font-family: var(--font-family-secondary);
             font-style: normal;
             font-weight: 700;
             font-size: 1.6rem;
@@ -112,7 +112,7 @@
             }
 
             &-two {
-                font-family: 'Lato';
+                font-family: var(--font-family-secondary);
                 font-style: normal;
                 font-weight: 600;
                 text-decoration-line: underline;
@@ -130,6 +130,17 @@
                 width: 21.3rem;
             }
         }
+
+        @media only screen and (max-width: 1100px) {         
+            margin-top: 5rem;
+        }
+        @media only screen and (max-width: 900px) {         
+            margin-top: 5rem;
+        }
+    
+        @media only screen and (max-width: 600px) {         
+            margin-top: 5rem;
+        }
     }
 
     .threeCardsMain {
@@ -137,6 +148,17 @@
         flex-direction: column;
         margin-left: -1rem;
         flex-wrap: wrap;
+
+        @media only screen and (max-width: 1100px) {         
+            margin-top: 5rem;
+        }
+        @media only screen and (max-width: 900px) {         
+            margin-top: 5rem;
+        }
+    
+        @media only screen and (max-width: 600px) {         
+            margin-top: 5rem;
+        }
     }
 
     .threeCards {

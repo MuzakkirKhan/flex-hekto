@@ -16,7 +16,7 @@
         }
  
     &__text {
-        font-family: 'Lato';
+        font-family: var(--font-family-secondary);
         font-style: normal;
         font-weight: 400;
         font-size: 1.7rem;
@@ -37,7 +37,11 @@
 
     &__subCol {       
 
-
+        @media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+            // display: flex;
+            // justify-content: center;
+            margin-left: 13rem;
+          }
         &-item {
             display: flex;
 
@@ -49,7 +53,7 @@
             }
 
             &-text {
-                font-family: 'Lato';
+                font-family: var(--font-family-secondary);
                 font-style: normal;
                 font-weight: 400;
 
@@ -99,4 +103,9 @@ line-height: 2rem;
 letter-spacing: 0.02em;
 
 color: #FFFFFF;
+@media only screen and (max-width: 900px) {  // making fontsize 8 rem at this point, this gives more room
+    // display: flex;
+    // justify-content: center;
+    margin-left: 13rem;
+  }
 }

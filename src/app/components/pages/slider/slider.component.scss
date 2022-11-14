@@ -63,6 +63,16 @@
             width:65rem;
             left:5rem;
             z-index: -2;
+            @media only screen and (max-width: 1100px) {         
+                display:none
+            }
+            @media only screen and (max-width: 900px) {         
+                display:none
+            }
+        
+            @media only screen and (max-width: 600px) {         
+                display:none
+            }
         }
 
         &-main{
@@ -98,17 +108,39 @@
         &-off{
        position: absolute;
        top:2rem;
-       left:55rem
+       left:52rem;
+       width:15rem;
+
+       @media only screen and (max-width: 1100px) {         
+        display:none
+    }
+    @media only screen and (max-width: 900px) {         
+        display:none
+    }
+
+    @media only screen and (max-width: 600px) {         
+        display:none
+    }
         }
 
         &-text{
             position: absolute;
             top:5rem;
-            right:-2.5rem;
+            right:-.5rem;
             font-size: 3.5rem;
 line-height: 4.4rem;
 
 color: #FFFFFF;
+@media only screen and (max-width: 1100px) {         
+    display:none
+}
+@media only screen and (max-width: 900px) {         
+    display:none
+}
+
+@media only screen and (max-width: 600px) {         
+    display:none
+}
         }
     }
 
@@ -132,7 +164,7 @@ color: #FFFFFF;
         &-one {
             display: inline-block;
             align-items: center;
-            font-family: 'Lato';
+            font-family: var(--font-family-secondary);
             font-style: normal;
             font-weight: 700;
             font-size: 1.6rem;
@@ -154,7 +186,7 @@ color: #FFFFFF;
         }
 
         &-three {
-            font-family: 'Lato';
+            font-family: var(--font-family-secondary);
             font-style: normal;
             font-weight: 70;
             font-size: 1.6rem;

@@ -35,7 +35,7 @@
 
             &-one {
                 color: var(--color-footer2-text);
-                font-family: 'Lato';
+                font-family: var(--font-family-secondary);
                 font-style: normal;
                 font-weight: 600;
                 font-size: 1.6rem;
@@ -66,7 +66,7 @@
 
 .footerText {
    
-    font-family: 'Lato';
+    font-family: var(--font-family-secondary);
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
@@ -89,20 +89,33 @@
     height: 4.4rem;
     width: 37rem;
    
-    margin-right: -140px;
+    margin-right: -14rem;
     margin-bottom: 2rem;
+    @media only screen and (max-width:1100px) {  
+        width:27rem;
+        margin-right: -8rem;
+       }
+
+       @media only screen and (max-width:900px) {  
+        width:20rem;
+        margin-right: -6rem;
+        font-size: .8rem;
+       }
 
 
 }
 
 ::-webkit-input-placeholder {
     color: #8A8FB9;
-    font-family: 'Lato';
+    font-family: var(--font-family-secondary);
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.9rem;
     padding-left: 2rem;
+    @media only screen and (max-width:900px) {        
+        font-size: 1.2rem;
+       }
 }
 
 .search__button {
